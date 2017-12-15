@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>交通便利</title>
+		<link rel="stylesheet" type="text/css" href="css/jiaotongbianli.css"/>
+	</head>
+	<body>
+		<div id="wrap">
+			<!--上层大图-->
+			<div id="maxImage">
+				<img src="img/xiuxianyuleTop.jpg" id="Image_max"/>
+			</div>
+			<!--导航条-->
+			<div id="NavigationBar">
+				<div id="NavigationBar_content">
+					<a href="index.html" class="Navigation_a">首页</a>
+					<a href="mingshengguji.html" class="Navigation_a">名胜古迹</a>
+					<a href="xiuxianyule.html" class="Navigation_a">休闲娱乐</a>
+					<a href="wenmingtechan.html" class="Navigation_a">文明特产</a>
+					<a href="gujinmingren.html" class="Navigation_a">古今名人</a>
+					<a href="jiaotongbianli.html" class="Navigation_a">交通便利</a>
+				</div>
+			</div>
+			<!--文章-->
+			<div id="content">
+				<h1>运城-交通四通八达</h1>
+				<h2>运城高铁-运城北站</h2>
+				<p>运城北站，位于运城市盐湖区姚孟办事处陶上村，大运高速路南侧，毗邻运城张孝机场。运城北站为大西客专新建车站，隶属太原铁路局侯马车务段管辖</p>
+				<div style="width:100%;margin:0 auto;">
+					<img src="img/yunchengbeizhan.jpeg" alt="这是一张运城北站的图片" />
+				</div>
+				<p>运城北站总投资7180万元，设计任务由曾设计过“水立方”的中建(北京)国际设计顾问有限公司承担，以“河东文化”为依托，将运城北站总体概念设计为“河东掠影”。引用舜帝弹奏南风歌引得百凤来朝的典故，将设计理念定为“舜帝引凤”。其中运城北站站房面积7999㎡，建筑高度18米，结构层数为框架结构两层。总体由梯形体块构成，顶棚横向伸展的屋檐代表凤凰的双翼，层叠的横向窗棂则象征着盐湖带给运城的辉煌。运城北站到发场设计4个站台、8条车道，附有动车组存车场，满足作为始发站的条件。</p>
+				<!--运城北站百度地图展示区域-->
+				<div id="container"></div> 
+				<h2>运城关公机场：</h2>
+				<p>运城关公机场,毗邻大西客专运城北站与运城客运东站，有机场大道与市区相连，运风、运三和大运高速形成了运城通往西安、三门峡、太原等大城市的交通网，是晋陕豫黄河金三角地区对外开放的窗口。</p>
+				<div style="width:100%;margin:0 auto;">
+					<img src="img/guangongjichang.jpg" alt="这是一张运城关公机场的图片" />
+				</div>
+				<p>运城关公机场于2005年2月建成通航。跑道长3000米，宽60米，飞行区等级4D，可起降B767-300以下系列机型。机坪面积6万多平方米，有6个廊桥，可同时停放10架飞机。现有两座航站楼，T2航站楼面积2.7万平方米，T1航站楼面积3059平方米，为国际、港澳台到发。</p>
+				<p>运城关公机场先后开通航线26条，通航城市24个。目前运行的航线有14条，通航城市有北京、广州、成都等20个，引进中国国际航空公司、中国南方航空、中国东方航空、上海航空、厦门航空、深圳航空、山东航空、昆明航空多家航空公司，其中国航设有运城机场营业部。</p>
+				<p>2016年，运城机场完成运输起降0.79万架次，旅客吞吐量84.32万人次，货邮吞吐量0.32万吨。自2005年通航以来，运城机场共安全起降航班8万余架次，运送旅客660万余人次，稳居山西省第二大民航机场。</p>
+				<!--运城关公机场百度地图展示区域-->
+				<div id="guangongMap"></div>
+				<h2>运城火车站</h2>
+				<p>运城火车站（简称运城站），1935年建立，位于山西省运城市站东路，隶属太原铁路局侯马车务段管辖，现为一等站。</p>
+				<p>车站前广场中心一座关公提大刀骑马的雕塑成了运城火车站的标志</p>
+				<div style="width:100%;margin:0 auto;">
+					<img src="img/huochezhan.jpg" alt="这是一张运城火车站的图片" />
+				</div>
+				<!--运城火车站地图展示-->
+				<div id="train"></div>
+				<h2>运城客运中心-北客运站</h2>
+				<div style="width:100%;margin:0 auto;">
+					<img src="img/zhongxz.jpg" alt="这是一张运城中心站的图片" />
+				</div>
+				<p>运城长途汽车中心站总投资6250万元的运城市汽车客运中心站一期工程竣工并投入运营。该中心站占地面积为89亩，日始发车辆650班次，日发送旅客2万多人次，发车位50多个，可容纳驻站车辆400余辆。</p>
+				<!--运城中心汽车站地图展示-->
+				<div id="busMap"></div>
+			</div>
+			<!--结尾-->
+			<div id="bottom">
+				<h4>16电商g3班 —— 张岩涛</h4>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript"src="http://api.map.baidu.com/api?v=2.0&ak=q5UnVCpjPbSCF8mXd0VTYABpK6Sc8Y2Z"></script>
+	<script type="text/javascript">
+		//运城北站
+		// 创建地图实例 
+		var mapOne = new BMap.Map("container");
+ 		// 创建点坐标 
+		var pointOne = new BMap.Point(110.99021,35.105101);
+ 		// 初始化地图，设置中心点坐标和地图级别
+		mapOne.centerAndZoom(pointOne, 30);
+		//开启鼠标滚轮缩放
+  		mapOne.enableScrollWheelZoom(true); 
+  		//添加控件
+  		mapOne.addControl(new BMap.NavigationControl());    
+		mapOne.addControl(new BMap.ScaleControl());    
+		mapOne.addControl(new BMap.OverviewMapControl());    
+		var marker = new BMap.Marker(pointOne);  // 创建标注
+		mapOne.addOverlay(marker);               // 将标注添加到地图中
+		marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+		//关公机场
+  		// 创建地图实例 
+		var mapTwo = new BMap.Map("guangongMap");
+ 		// 创建点坐标 
+		var pointTwo = new BMap.Point(111.044578,35.121655);
+ 		// 初始化地图，设置中心点坐标和地图级别
+		mapTwo.centerAndZoom(pointTwo, 15);
+		//开启鼠标滚轮缩放
+  		mapTwo.enableScrollWheelZoom(true);  		
+  		//添加控件
+  		mapTwo.addControl(new BMap.NavigationControl());    
+		mapTwo.addControl(new BMap.ScaleControl());    
+		mapTwo.addControl(new BMap.OverviewMapControl());    
+		//火车站
+		// 创建地图实例 
+		var mapTheer = new BMap.Map("train");
+ 		// 创建点坐标 
+		var pointTheer = new BMap.Point(110.997266,35.032445);
+ 		// 初始化地图，设置中心点坐标和地图级别
+		mapTheer.centerAndZoom(pointTheer, 35);
+		//开启鼠标滚轮缩放
+  		mapTheer.enableScrollWheelZoom(true);  		
+  		//添加控件
+  		mapTheer.addControl(new BMap.NavigationControl());    
+		mapTheer.addControl(new BMap.ScaleControl());    
+		mapTheer.addControl(new BMap.OverviewMapControl());    
+		//中心汽车站
+		// 创建地图实例 
+		var mapFour = new BMap.Map("busMap");
+ 		// 创建点坐标 
+		var pointFour = new BMap.Point(110.990587,35.049772);
+ 		// 初始化地图，设置中心点坐标和地图级别
+		mapFour.centerAndZoom(pointFour, 15);
+		//开启鼠标滚轮缩放
+  		mapFour.enableScrollWheelZoom(true);  		
+  		//添加控件
+  		mapFour.addControl(new BMap.NavigationControl());    
+		mapFour.addControl(new BMap.ScaleControl());    
+		mapFour.addControl(new BMap.OverviewMapControl());    
+	</script>
+</html>
